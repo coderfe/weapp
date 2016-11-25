@@ -1,0 +1,8 @@
+<view class="container">
+  <block wx:for="{{ themes }}">
+    <view class="theme" bindtap="bindViewTap" data-id="{{ item.id }}">
+      <image class="theme-thumb" src="{{ item.thumbnail }}" />
+      <text class="theme-name">{{ item.name }}：{{ item.description }}</text>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper indicator-dots="{{ indicatorDots }}"
+    autoplay="{{ autoplay }}"
+    interval="{{ interval }}"
+    duration="{{ duration }}">
+      <block wx:for="{{ banner }}">
+        <swiper-item>
+          <image class="banner-img" src="{{ item.image }}" />
+          <text class="banner-text">{{ item.title }}</text>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="content-container">
+  <block wx:for="{{ list }}">
+    <view class="list" bindtap="bindViewTap" data-detail="{{ item.id }}">
+        <text class="content-title">{{ item.title }}</text>
+        <image class="content-img" src="{{ item.images[0] }}" />
+    </view>
+  </block>
+</view>

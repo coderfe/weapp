@@ -1,0 +1,22 @@
+.theme {
+  position: relative;
+  font-size: 0;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+.theme-thumb {
+  width: 100%;
+  filter: brightness(60%);
+}
+.theme-name {
+  display: block;
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  padding: 0 3rem;
+  box-sizing: border-box;
+  font-size: .9rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5;
+}

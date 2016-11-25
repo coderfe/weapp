@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="banner">
+    <view class="banner-img">
+      <image src="{{ art.image }}" />
+    </view>
+    <text class="banner-img--license">{{ art.image_source }}</text>
+    <text class="banner-title">{{ art.title }}</text>
+  </view>
+
+  <view class="content">
+    
+  </view>
+
+</view>

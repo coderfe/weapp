@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="banner">
+    <view class="banner-img">
+      <image src="{{ lists.image }}" />
+    </view>
+    <text class="banner-title">{{ lists.description }}</text>
+  </view>
+  <view class="editor">
+    <!-- TODO: change font size -->
+    <text class="editor-text">主编</text>
+    <image class="editor-avatar" src="{{ lists.editors[0].avatar }}" />
+  </view>
+  <view class="content">
+    <block wx:for="{{ lists.stories }}">
+      <view class="list-wrapper">
+        <view class="list-title">{{ item.title }}</view>
+        <view class="list-img" wx:if="{{ item.images }}" ><image src="{{ item.images[0] }}" /></view>
+      </view>
+    </block>
+  </view>
+</view>

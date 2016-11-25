@@ -1,0 +1,22 @@
+.banner {
+  position: relative;
+}
+.banner .banner-img image {
+  width: 100%;
+  max-width: 100%;
+  filter: brightness(70%);
+}
+.banner .banner-title {
+  position: absolute;
+  bottom: 1rem;
+  color: #fff;
+  padding: .5rem;
+}
+
+.banner .banner-img--license {
+  position: absolute;
+  bottom: .8rem;
+  right: .5rem;
+  color: #ddd;
+  font-size: .4rem;
+}
