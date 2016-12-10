@@ -1,4 +1,5 @@
 var util = require('../../utils/util');
+var WxParse = require('../../wxParse/wxParse.js');
 
 Page({
   data: {
@@ -15,6 +16,8 @@ Page({
         that.setData({
           detail: res.data.data,
         })
+        var content = res.data.data.content;
+        WxParse.wxParse('content', 'html', content, that, 5);
       }
     });
   }
