@@ -3,9 +3,9 @@
  * author: Di (微信小程序开发工程师)
  * organization: WeAppDev(微信小程序开发论坛)(http://weappdev.com)
  *               垂直微信小程序开发交流社区
- * 
+ *
  * github地址: https://github.com/icindy/wxParse
- * 
+ *
  * for: 微信小程序富文本解析
  * detail : http://weappdev.com/t/wxparse-alpha0-1-html-markdown/184
  */
@@ -122,7 +122,7 @@ view{
     margin: 10rpx 0;
 }
 .wxParse-li-text{
-    
+
     align-items: center;
     line-height: 20px;
 }
@@ -131,6 +131,7 @@ view{
     display: inline-flex;
     width: 5px;
     height: 5px;
+    border-radius: 50%;
     background-color: #333;
     margin-right: 5px;
 }
@@ -178,4 +179,10 @@ view{
 .wxEmoji{
     width: 16px;
     height:16px;
+}
+
+/* content */
+.content {
+  font-size: 28rpx;
+  line-height: 2;
 }
